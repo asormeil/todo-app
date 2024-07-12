@@ -1,6 +1,6 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { RouterLink, RouterView } from "vue-router"
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 </script>
 
 <template>
@@ -11,6 +11,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
     <nav class="navbar">
       <RouterLink to="/">To Do List</RouterLink>
+    </nav>
+    <nav class="navbar">
+      <RouterLink to="/column">AI Column Matching</RouterLink>
     </nav>
   </header>
 
@@ -28,9 +31,7 @@ header {
   justify-content: space-evenly;
   width: 100vw;
   position: sticky;
-  top:0;
-
-
+  top: 0;
 }
 
 .logo {
