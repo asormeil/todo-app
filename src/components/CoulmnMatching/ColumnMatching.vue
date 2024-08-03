@@ -10,7 +10,9 @@ const formData = ref({
 const handleSubmit = async () => {
   const apiKey = import.meta.env.VITE_OPEN_AI_KEY // Replace with your OpenAI API key
   console.log("import.meta.env.VUE_APP_OPEN_AI_KEY", import.meta.env.VUE_APP_OPEN_AI_KEY)
-  const prompt = `The following is a product property: ${formData.value.input}. My goal is to match the product property name to one of our database columns which are: (name, tag, producer, type, subtype, style, vintage, country, region, subregion, appellation, bin, size_value, size_units, size_container, units_per_case, sku, par, cost, quantity, vendor). Do not write any information in your response, just return the column name from the list. Also, if you are not sure if the column match is 100% accurate, offer two to four column names in order of their possibility being the correct one.`
+  const prompt = `The following is a product property: ${formData.value.input}. My goal is to match the product property name to one of our database columns which are:
+   (name, tag, producer, type, subtype, style, vintage, country, region, subregion, appellation, bin, size_value, size_units, size_container, units_per_case, sku, par, cost, quantity, vendor
+   ). Do not write any information in your response, just return the column name from the list. Also, if you are not sure if the column match is 100% accurate, offer two to four column names in order of their possibility being the correct one.`
 
   try {
     const start_time = Date.now()

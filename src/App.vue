@@ -15,6 +15,9 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
     <nav class="navbar">
       <RouterLink to="/column">AI Column Matching</RouterLink>
     </nav>
+    <nav class="navbar">
+      <RouterLink to="/classification">AI Column Classification</RouterLink>
+    </nav>
   </header>
 
   <main>

@@ -12,6 +12,16 @@ const router = createRouter({
       path: "/column",
       name: "column",
       component: () => import("../views/ColumnMatchingView.vue")
+    },
+    {
+      path: "/classification",
+      name: "classification",
+      component: () => import("../views/ColumnClassification.vue")
+    },
+    {
+      path: "/uploadfile",
+      name: "uploadfile",
+      component: () => import("../views/UploadFileView.vue")
     }
   ]
 })
